@@ -23,7 +23,6 @@
     <section class="intro-bg">
       <div class="container">
         <h1>Deseja Doar?</h1>
-        <p>fansojfjasgb bjasbkjbfga</p>
 
         <p>Mude a vida de uma família</p>
       </div>
