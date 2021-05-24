@@ -4,6 +4,9 @@
    $_SESSION['id_usuario'] = '';
    $_SESSION['nome_usuario'] = '';
    $_SESSION['email_usuario'] = '';
+   $_SESSION['id_ong'] = '';
+   $_SESSION['instituicao_ong'] = '';
+   $_SESSION['email_ong'] = '';
 
    header("Location: ../phppaginas/index.php");
 ?>

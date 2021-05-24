@@ -15,7 +15,7 @@ $usuario = new Usuario($pdo);
 
 if($nome && $email && $senha && $telefone && $cpf){
     if($confirmarSenha === $senha ){
-        if($usuario->verificaEmail($email)){
+        if($usuario->verificaEmailUsuario($email)){
             echo "Esse email ja existe!";
         }else{
             $usuario->cadastrarUsuario($email, $nome, $senha, $telefone, $cpf);
