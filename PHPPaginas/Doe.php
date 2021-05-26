@@ -33,25 +33,20 @@
         <div class="grid-4">
           <img src="../IMG/foto-ong.svg" alt="Foto da ONG">
         </div>
-
         <h2 class="grid-1-3">Nome ONG Exemplo</h2>
         <p class="grid-6">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
         </p>
-
         <a href="pagina-ong.php" class="btn grid-3">Saiba Mais</a>
       </div>
-
       <div class="ongs-card grid-16 ">
         <div class="grid-4">
           <img src="../IMG/foto-ong.svg" alt="Foto da ONG">
         </div>
-
         <h2 class="grid-1-3">Nome ONG Exemplo</h2>
         <p class="grid-6">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
         </p>
-
         <a href="pagina-ong.php" class="btn grid-3">Saiba Mais</a>
       </div>
 
@@ -85,15 +80,12 @@
     <footer class="rodape">
       <div class="container">
         <p class="copy grid-6">EstúdioDev &copy; - Alguns direitos reservados.</p>
-
         <div class="infos-facul grid-5">
           <h3>Telefone</h3>
           <p>(47) 3512-3100</p>
-
           <h3>Email</h3>
           <p>qualquercoisa@unisociesc.com.br</p>
         </div>
-
         <p class="sociesc grid-4">UniSociesc</p>
       </div>
     </footer>

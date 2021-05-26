@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt_br">
 <head>
-	<meta charset="UTF-8">
+  	<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
@@ -19,7 +19,6 @@ include "header.php";
 $_SESSION["ERRO"] = '';
 ?>
 
-
   <header class="masthead text-white text-center">
     <div class="overlay">
       <h1 class="titulo_principal">Ajude uma Família Hoje, Doando <br>Cestas Básicas </h1>
@@ -32,12 +31,12 @@ $_SESSION["ERRO"] = '';
             <?php
               if($logged){
             ?>
-              <a href="../PHPPaginas/../PHPPaginas/Doe.php"><button  type="button" class="btn btn-warning">Doar</button></a>
+              <a href="../PHPPaginas/../PHPPaginas/Doe.php"><button  type="button" class="btn bg-primary">Doar</button></a>
             <?php 
               }else{ ?>
-              <button  type="button" onclick="iniciaModal('modal-login')" class="btn btn-warning">Doar</button>
+              <button  type="button" onclick="iniciaModal('modal-login')" class="btn bg-primary">Doar</button>
               <p><h6 class="linha">OU</h6></p>
-              <button type="button" class="btn btn-warning" onclick="iniciaModal('modal-login')">É uma Ong?</button></a>
+              <button type="button" class="btn bg-primary" onclick="iniciaModal('modal-login')">É uma Ong?</button></a>
             <?php } ?>
           </div>
         </div>
@@ -67,7 +66,7 @@ $_SESSION["ERRO"] = '';
       </div><br><br><br>
       <div class="saiba_mais">
         <h5>Conheça mais sobre a gente</h5><br>
-        <button stype="button" class="btn btn-warning">HISTÓRIA</button>   
+        <button stype="button" class="btn bg-primary">HISTÓRIA</button>   
       </div>
     
   </div><br><br>
@@ -99,14 +98,11 @@ $_SESSION["ERRO"] = '';
           </div><br>
           <div class="saiba_mais">
             <h5>Saiba mais sobre os nossos parceiros</h5><br>
-            <button stype="button" class="btn btn-warning">ONGs</button>   
+            <button stype="button" class="btn bg-primary">ONGs</button>   
           </div>
         </div>
       </div>
     </header>   
-    <img class="d-block w-100" src="../IMG/bg-masthead3.jpg" alt="Second slide">    
-   
-      
     <script>
       var botaoSair = document.querySelector("#botaoSair");
       if (botaoSair != null){
@@ -121,7 +117,6 @@ $_SESSION["ERRO"] = '';
       }
     </script>
     <script src="../JS/script.js"></script>
-    <?php include "Footer.php";
-    ?>
+    <?php include "Footer.php";?>
 </body>
 </html>
