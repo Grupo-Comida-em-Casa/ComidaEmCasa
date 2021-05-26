@@ -31,7 +31,7 @@ $logged = isset($_SESSION['nome_usuario']) && !empty($_SESSION['nome_usuario']) 
             </div>    
           </div>
         </nav>
-        <a href="index.php"><img src="../IMG/logotipo.png" style="width: 200px;" alt=""></a>
+        <a href="index.php"><img src="../IMG/logotipo.png" style="width: 200px; max-width: 200px !important;" alt=""></a>
           <div class="collapse navbar-collapse container" id="navbarResponsive">
               <ul class="navbar-nav text-uppercase ml-auto">
                   <li class="nav-item"><a class="nav-link" href="historia.php">HISTÓRIA</a></li>
