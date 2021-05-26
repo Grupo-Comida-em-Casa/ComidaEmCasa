@@ -610,6 +610,9 @@ ul {
 
 /* Somente Edite os Códigos CSS a Partir Daqui! */
 
+img {
+  max-width: 100%;
+}
 
 /* Cabeçalho */
 
