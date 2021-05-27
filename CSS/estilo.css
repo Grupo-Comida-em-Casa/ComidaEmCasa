@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body{
-  background-color: #F8F9F9;
+  background-color:white;
 }
 #mainNav { /*menu*/
   padding-top: 1rem;
@@ -112,4 +112,7 @@ header.masthead{
 }
 .informacoe h3, h4, h5{
   font-family: Georgia; 
+}
+.perfil{
+  background-color: #C4C4C4;
 }
