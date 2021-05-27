@@ -1,18 +1,20 @@
-<div class="rodap"><br><br>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm">
-              EstúdioDev 2021/1<p> direitos reservados.</p>
-            </div>
-            <div class="linha-vertical"></div>
-            <div class="col-sm">
-              Telefone <p> (47) 2512-3100</p>
-              E-mail<p>qualquercoisa@unisociesc.com.br</p>
-            </div>
-            <div class="linha-vertical"></div>
-            <div class="col-sm">
-              UniSociesc
-            </div>
-          </div><br><br>
-        </div>
-</div>
+<head>
+  <link rel="stylesheet" href="../CSS/footer.css">
+</head>
+
+<footer class="rodape">
+  <div>
+    <p class="copy">EstúdioDev &copy; - Alguns direitos reservados.</p>
+  </div>
+
+  <div class="infos-facul">
+    <h3>Telefone</h3>
+    <p>(47) 3512-3100</p>
+    <h3>Email</h3>
+    <p>qualquercoisa@unisociesc.com.br</p>
+  </div>
+
+  <div>
+    <p class="sociesc">UniSociesc</p>
+  </div>
+</footer>

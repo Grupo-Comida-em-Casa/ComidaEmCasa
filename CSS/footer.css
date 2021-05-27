@@ -1,0 +1,43 @@
+.rodape {
+  padding: 16px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #0062cc;
+}
+
+.copy {
+  font-family: "Graphik", "Roboto", Helvetica, sans-serif;
+  font-size: 14px;
+  color: #f9f9f9;
+  margin-bottom: 0;
+}
+
+.infos-facul h3 {
+  font-family: "Graphik", "Roboto", Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #f9f9f9;
+  opacity: 100%;
+  margin-bottom: 4px;
+}
+
+.infos-facul h3:nth-child(3n) {
+  margin-top: 20px;
+}
+
+.infos-facul p {
+  font-family: "Graphik", "Roboto", Helvetica, sans-serif;
+  font-size: 14px;
+  color: #f2f2e9;
+  margin-bottom: 0;
+}
+
+.sociesc {
+  text-align: right;
+  font-family: "Graphik", "Roboto", Helvetica, sans-serif;
+  font-size: 18px;
+  color: #f9f9f9;
+  margin-bottom: 0;
+}
