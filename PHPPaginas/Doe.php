@@ -28,13 +28,13 @@
       </div>
     </section>
 
-    <section class="ongs container">
-    <div class="ongs-card grid-16">
-        <div class="imagem grid-4">
+    <section class="ongs">
+      <div class="ongs-card grid-16">
+        <div class="imagem">
           <img src="../IMG/foto-ong.svg" alt="Foto da ONG">
         </div>
 
-        <div class="grid-6">
+        <div class="resumo-ong">
           <h2>Nome ONG Exemplo</h2>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
@@ -47,17 +47,19 @@
 
           <p>Cestas desejadas: <span id="cestas-desejadas">80</span></p>
         </div>
+        
         <div class="call">
-          <a href="pagina-ong.html" class="btn grid-3">Saiba Mais</a>
+          <a href="pagina-ong.html" class="btn">Doar</a>
+          <a href="pagina-ong.php" class="btn">Saiba Mais</a>
         </div>
       </div>
 
       <div class="ongs-card grid-16">
-        <div class="imagem grid-4">
+        <div class="imagem">
           <img src="../IMG/foto-ong.svg" alt="Foto da ONG">
         </div>
 
-        <div class="grid-6">
+        <div class="resumo-ong">
           <h2>Nome ONG Exemplo</h2>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
@@ -70,18 +72,19 @@
 
           <p>Cestas desejadas: <span id="cestas-desejadas">80</span></p>
         </div>
+
         <div class="call">
-          <a href="pagina-ong.html" class="btn grid-3">Doar</a>
-          <a href="pagina-ong.html" class="btn grid-3">Saiba Mais</a>
+          <a href="pagina-ong.html" class="btn">Doar</a>
+          <a href="pagina-ong.php" class="btn">Saiba Mais</a>
         </div>
       </div>
 
       <div class="ongs-card grid-16">
-        <div class="imagem grid-4">
+        <div class="imagem">
           <img src="../IMG/foto-ong.svg" alt="Foto da ONG">
         </div>
 
-        <div class="grid-6">
+        <div class="resumo-ong">
           <h2>Nome ONG Exemplo</h2>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
@@ -94,18 +97,19 @@
 
           <p>Cestas desejadas: <span id="cestas-desejadas">80</span></p>
         </div>
+
         <div class="call">
-          <a href="pagina-ong.html" class="btn grid-3">Doar</a>
-          <a href="pagina-ong.html" class="btn grid-3">Saiba Mais</a>
+          <a href="pagina-ong.html" class="btn">Doar</a>
+          <a href="pagina-ong.php" class="btn">Saiba Mais</a>
         </div>
       </div>
 
       <div class="ongs-card grid-16">
-        <div class="imagem grid-4">
+        <div class="imagem">
           <img src="../IMG/foto-ong.svg" alt="Foto da ONG">
         </div>
 
-        <div class="grid-6">
+        <div class="resumo-ong">
           <h2>Nome ONG Exemplo</h2>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
@@ -118,23 +122,28 @@
 
           <p>Cestas desejadas: <span id="cestas-desejadas">80</span></p>
         </div>
+
         <div class="call">
-          <a href="pagina-ong.html" class="btn grid-3">Doar</a>
-          <a href="pagina-ong.html" class="btn grid-3">Saiba Mais</a>
+          <a href="pagina-ong.html" class="btn">Doar</a>
+          <a href="pagina-ong.php" class="btn">Saiba Mais</a>
         </div>
       </div>
     </section>
 
     <footer class="rodape">
-      <div class="container">
-        <p class="copy grid-6">EstúdioDev &copy; - Alguns direitos reservados.</p>
-        <div class="infos-facul grid-5">
-          <h3>Telefone</h3>
-          <p>(47) 3512-3100</p>
-          <h3>Email</h3>
-          <p>qualquercoisa@unisociesc.com.br</p>
-        </div>
-        <p class="sociesc grid-4">UniSociesc</p>
+      <div>
+        <p class="copy">EstúdioDev &copy; - Alguns direitos reservados.</p>
+      </div>
+
+      <div class="infos-facul">
+        <h3>Telefone</h3>
+        <p>(47) 3512-3100</p>
+        <h3>Email</h3>
+        <p>qualquercoisa@unisociesc.com.br</p>
+      </div>
+
+      <div>
+        <p class="sociesc">UniSociesc</p>
       </div>
     </footer>
   </main>

@@ -26,33 +26,35 @@ $_SESSION["ERRO"] = '';
       </div>
     </section>
 
-    <section class="sobre-ong container">
-      <h2 class="grid-16">Sobre Nós</h2>
+    <section class="sobre-ong">
+      <h2 class="subtitle">Sobre Nós</h2>
 
-      <div class="historia-ong grid-8">
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ev
-        </p>
+      <div class="flex">
+        <div class="historia-ong">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ev
+          </p>
 
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ev
-        </p>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ev
+          </p>
 
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ev
-        </p>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ev
+          </p>
+        </div>
 
-      </div>
-
-      <img src="../IMG/ong-bg.png" alt="Foto da ONG/Funcionarios" class="grid-8">
+        <div>
+          <img src="../IMG/ong-bg.png" alt="Foto da ONG/Funcionarios">
+        </div>
       </div>
     </section>
 
-    <section class="info-localizacao container">
+    <section class="info-localizacao">
       <h2>Onde Nos Encontrar</h2>
-
+      
       <div class="endereco">
-        <div class="grid-6">
+        <div>
           <h3>Endereço</h3>
 
           <p>R. Gothard Kaesemodel, 833</p>
@@ -60,38 +62,38 @@ $_SESSION["ERRO"] = '';
           <p>89203-400</p>
         </div>
 
-        <div class="grid-6">
+        <div>
           <h3>Nosso Email</h3>
           <p>qualquercoisa@unisociesc.com.br</p>
         </div>
 
-        <div class="grid-4">
+        <div>
           <h3>Telefone</h3>
           <p>(47) 3512-3100</p>
         </div>
       </div>
     </section>
 
-    <section class="maps container">
+    <section class="maps">
       <img src="../IMG/maps.png" alt="Localização da ONG no Maps">
     </section>
   </main>
 
   <footer class="rodape">
-    <div class="container">
-      <div class="grid-16">
-        <p class="copy grid-6">EstúdioDev &copy; - Alguns direitos reservados.</p>
+      <div>
+        <p class="copy">EstúdioDev &copy; - Alguns direitos reservados.</p>
+      </div>
 
-        <div class="infos-facul grid-5">
+      <div class="infos-facul">
           <h3>Telefone</h3>
           <p>(47) 3512-3100</p>
 
           <h3>Email</h3>
           <p>qualquercoisa@unisociesc.com.br</p>
-        </div>
-
-        <p class="sociesc grid-4">UniSociesc</p>
       </div>
-    </div>
+
+      <div>
+        <p class="sociesc">UniSociesc</p>
+      </div>
   </footer>
 </body>

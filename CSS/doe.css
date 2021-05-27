@@ -610,10 +610,6 @@ ul {
 
 /* Somente Edite os Códigos CSS a Partir Daqui! */
 
-img {
-  max-width: 100%;
-}
-
 /* Cabeçalho */
 
 .menu-header {
@@ -710,13 +706,20 @@ img {
 /* ONGs */
 
 .ongs {
-  margin: 64px auto;
+  margin: 64px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resumo-ong {
+  max-width: 400px;
 }
 
 .ongs-card {
   display: flex;
   align-items: center;
-  justify-content: center !important;
+  justify-content: space-between;
   margin: 32px auto;
   padding: 32px;
   background: #e5e5e5;
@@ -760,6 +763,7 @@ img {
 .ongs-card p {
   font-family: "Graphik", "Roboto", Helvetica, sans-serif;
   margin-top: 18px;
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 20px;
   color: #333;
@@ -770,7 +774,7 @@ img {
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 0.1em;
-  margin: 10px 0 0 80px;
+  margin: 10px 0;
   text-align: center;
   padding: 16px 20px;
   background: #5271ff;
@@ -788,22 +792,25 @@ img {
 .rodape {
   padding: 16px 0;
   width: 100%;
-  background: #f8f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #0062cc;
 }
 
 .copy {
   font-family: "Graphik", "Roboto", Helvetica, sans-serif;
   font-size: 14px;
-  padding-top: 40px;
-  margin-right: 30px;
-  color: #333;
+  color: #f9f9f9;
+  margin-bottom: 0;
 }
 
 .infos-facul h3 {
   font-family: "Graphik", "Roboto", Helvetica, sans-serif;
   font-size: 18px;
   font-weight: bold;
-  color: #544848;
+  color: #f9f9f9;
+  opacity: 100%;
   margin-bottom: 4px;
 }
 
@@ -814,13 +821,14 @@ img {
 .infos-facul p {
   font-family: "Graphik", "Roboto", Helvetica, sans-serif;
   font-size: 14px;
-  color: #333;
+  color: #f2f2e9;
+  margin-bottom: 0;
 }
 
 .sociesc {
-  padding-top: 36px;
   text-align: right;
   font-family: "Graphik", "Roboto", Helvetica, sans-serif;
   font-size: 18px;
-  color: 333;
+  color: #f9f9f9;
+  margin-bottom: 0;
 }

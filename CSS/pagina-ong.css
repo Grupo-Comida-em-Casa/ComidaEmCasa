@@ -616,6 +616,17 @@ ul {
 
 .sobre-ong {
   padding: 64px 0;
+  width: 100%;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sobre-ong h2 {
+  text-align: center;
 }
 
 .sobre-ong img {
@@ -630,6 +641,7 @@ ul {
 }
 
 .sobre-ong h2:after {
+  margin: 0 auto;
   margin-top: 8px;
   display: block;
   content: "";
@@ -661,10 +673,12 @@ ul {
   font-family: "Graphik", "Roboto", Helvetica, sans-serif;
   font-size: 36px;
   font-weight: bold;
+  text-align: center;
   color: #544848;
 }
 
 .info-localizacao h2:after {
+  margin: 0 auto;
   margin-top: 8px;
   display: block;
   content: "";
@@ -675,6 +689,8 @@ ul {
 
 .endereco {
   margin-top: 64px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .endereco h3 {
@@ -704,6 +720,8 @@ ul {
 
 .maps {
   padding: 64px 0 128px 0;
+  display: flex;
+  justify-content: center;
 }
 
 .maps img {
