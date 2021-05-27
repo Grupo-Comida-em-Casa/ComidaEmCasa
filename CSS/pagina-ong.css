@@ -608,10 +608,6 @@ ul {
   }
 }
 
-img {
-  max-width: 100%;
-}
-
 .intro-bg-ong h1:after {
   display: none;
 }

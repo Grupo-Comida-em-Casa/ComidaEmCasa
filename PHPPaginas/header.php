@@ -24,18 +24,18 @@ $logged = isset($_SESSION['nome_usuario']) && !empty($_SESSION['nome_usuario']) 
             <div class="dropdown-content">
               <ul class="navbar-nav text-uppercase ml-auto">
                 <li class="nav-item"><a class="nav-link" href="historia.php">HISTÓRIA</a></li>
-                <li class="nav-item"><a class="nav-link" href="ongs.php">ONGs</a></li>
+                <li class="nav-item"><a class="nav-link" href="pagina-ong.php">ONGs</a></li>
                 <li class="nav-item"><a class="nav-link" href="Doe.php">DOE</a></li>
                 <li class="nav-item"><a class="nav-link" href="contato.php">CONTATO</a></li>         
               </ul>
             </div>    
           </div>
         </nav>
-        <a href="index.php"><img src="../IMG/logotipo.png" style="width: 200px;" alt=""></a>
+        <a href="index.php"><img src="../IMG/logotipo.png" style="width: 200px; max-width: 200px !important;" alt=""></a>
           <div class="collapse navbar-collapse container" id="navbarResponsive">
               <ul class="navbar-nav text-uppercase ml-auto">
                   <li class="nav-item"><a class="nav-link" href="historia.php">HISTÓRIA</a></li>
-                  <li class="nav-item"><a class="nav-link" href="ongs.php">| ONGs</a></li>
+                  <li class="nav-item"><a class="nav-link" href="pagina-ong.php">| ONGs</a></li>
                   <li class="nav-item"><a class="nav-link" href="Doe.php">| DOE</a></li>
                   <li class="nav-item"><a class="nav-link" href="contato.php">| CONTATO |</a></li>
               </ul>
@@ -73,11 +73,11 @@ $logged = isset($_SESSION['nome_usuario']) && !empty($_SESSION['nome_usuario']) 
           <div class="form-row">
             <div class="form-group col-md-6">
             <label for="inputCity">E-mail</label>
-            <input type="email" class="form-control" id="inputCity" name="email_usuario" placeholder="example@gmail.com">
+            <input type="email" class="form-control" id="inputCity" name="digito1" placeholder="example@gmail.com">
             </div>
             <div class="form-group col-md-6">
             <label for="inputNovaSenha">Senha</label>
-            <input type="password" class="form-control" id="inputEmail4" name="senha_usuario" placeholder="Senha">
+            <input type="password" class="form-control" id="inputEmail4" name="digito2" placeholder="Senha">
             </div>
             <button class="logar botoes-modal">Logar</button>
             <button id="botaoCadastro" onclick= "iniciaModalRegistro('modal_reg')" class="logar botoes-modal">Cadastre-se</button>

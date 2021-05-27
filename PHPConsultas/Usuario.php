@@ -25,7 +25,7 @@ class Usuario{
 
 // Parte do Usuário 
     
-    public function verificaEmail($email){
+    public function verificaEmailUsuario($email){
 
         $sql = "SELECT * FROM usuario WHERE email_usuario = :email";
 
@@ -40,7 +40,48 @@ class Usuario{
 		}
     }
 
-    public function fazerLogin($email, $senha){
+    public function verificaEmailOng($emailOng){
+
+        $sql = "SELECT * FROM instituicao WHERE email_ong = :email";
+
+		$sql = 	$this->pdo->prepare($sql);
+        $sql->bindValue(':email', $emailOng);
+        $sql->execute();
+
+		if ($sql->rowCount() > 0){ 
+			return true;
+		}else{
+			return false;
+		}
+    }
+    public function fazerLoginOng($emailOng, $senhaOng){
+
+        $senha = md5($senha);
+
+        $sql = "SELECT * FROM instituicao WHERE email_ong = :email and senha_ong = :senha";
+        
+		$sql = 	$this->pdo->prepare($sql);
+        $sql->bindValue(':email', $emailOng);
+        $sql->bindValue(':senha', $senhaOng);
+        $sql->execute();
+
+		if ($sql->rowCount() > 0){ 
+           
+            //salva os dados do usuario no token
+            foreach ($sql->fetchAll() as $ong) { 
+				$_SESSION['id_ong'] = $ong['id_ong'];
+                $_SESSION['instituicao_ong'] = $ong['instituicao_ong'];
+                $_SESSION['email_ong'] = $ong['email_ong'];
+			}
+            
+            header("Location: ../phppaginas/index.php");
+		}else{
+            header("Location: ../phppaginas/index.php");
+			
+		}
+    }
+
+    public function fazerLoginUsuario($email, $senha){
 
         $senha = md5($senha);
 

@@ -29,71 +29,111 @@
     </section>
 
     <section class="ongs container">
+    <div class="ongs-card grid-16">
+        <div class="imagem grid-4">
+          <img src="../IMG/foto-ong.svg" alt="Foto da ONG">
+        </div>
+
+        <div class="grid-6">
+          <h2>Nome ONG Exemplo</h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+          </p>
+
+          <p class="cestas-adquiridas">Cestas Adquiridas: <span id="req-cestas">80</span></p>
+
+          <span id="percent" class="percent">80%</span>
+          <span id="percent-bar" class="percent-bar"></span>
+
+          <p>Cestas desejadas: <span id="cestas-desejadas">80</span></p>
+        </div>
+        <div class="call">
+          <a href="pagina-ong.html" class="btn grid-3">Saiba Mais</a>
+        </div>
+      </div>
+
       <div class="ongs-card grid-16">
-        <div class="grid-4">
+        <div class="imagem grid-4">
           <img src="../IMG/foto-ong.svg" alt="Foto da ONG">
         </div>
 
-        <h2 class="grid-1-3">Nome ONG Exemplo</h2>
-        <p class="grid-6">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
-        </p>
+        <div class="grid-6">
+          <h2>Nome ONG Exemplo</h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+          </p>
 
-        <a href="pagina-ong.php" class="btn grid-3">Saiba Mais</a>
+          <p class="cestas-adquiridas">Cestas Adquiridas: <span id="req-cestas">80</span></p>
+
+          <span id="percent" class="percent">80%</span>
+          <span id="percent-bar" class="percent-bar"></span>
+
+          <p>Cestas desejadas: <span id="cestas-desejadas">80</span></p>
+        </div>
+        <div class="call">
+          <a href="pagina-ong.html" class="btn grid-3">Doar</a>
+          <a href="pagina-ong.html" class="btn grid-3">Saiba Mais</a>
+        </div>
       </div>
 
-      <div class="ongs-card grid-16 ">
-        <div class="grid-4">
+      <div class="ongs-card grid-16">
+        <div class="imagem grid-4">
           <img src="../IMG/foto-ong.svg" alt="Foto da ONG">
         </div>
 
-        <h2 class="grid-1-3">Nome ONG Exemplo</h2>
-        <p class="grid-6">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
-        </p>
+        <div class="grid-6">
+          <h2>Nome ONG Exemplo</h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+          </p>
 
-        <a href="pagina-ong.php" class="btn grid-3">Saiba Mais</a>
+          <p class="cestas-adquiridas">Cestas Adquiridas: <span id="req-cestas">80</span></p>
+
+          <span id="percent" class="percent">80%</span>
+          <span id="percent-bar" class="percent-bar"></span>
+
+          <p>Cestas desejadas: <span id="cestas-desejadas">80</span></p>
+        </div>
+        <div class="call">
+          <a href="pagina-ong.html" class="btn grid-3">Doar</a>
+          <a href="pagina-ong.html" class="btn grid-3">Saiba Mais</a>
+        </div>
       </div>
 
-      <div class="ongs-card grid-16 ">
-        <div class="grid-4">
+      <div class="ongs-card grid-16">
+        <div class="imagem grid-4">
           <img src="../IMG/foto-ong.svg" alt="Foto da ONG">
         </div>
 
-        <h2 class="grid-1-3">Nome ONG Exemplo</h2>
-        <p class="grid-6">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
-        </p>
+        <div class="grid-6">
+          <h2>Nome ONG Exemplo</h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+          </p>
 
-        <a href="pagina-ong.php" class="btn grid-3">Saiba Mais</a>
-      </div>
+          <p class="cestas-adquiridas">Cestas Adquiridas: <span id="req-cestas">80</span></p>
 
-      <div class="ongs-card grid-16 ">
-        <div class="grid-4">
-          <img src="../IMG/foto-ong.svg" alt="Foto da ONG">
+          <span id="percent" class="percent">80%</span>
+          <span id="percent-bar" class="percent-bar"></span>
+
+          <p>Cestas desejadas: <span id="cestas-desejadas">80</span></p>
         </div>
-
-        <h2 class="grid-1-3">Nome ONG Exemplo</h2>
-        <p class="grid-6">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
-        </p>
-
-        <a href="pagina-ong.php" class="btn grid-3">Saiba Mais</a>
+        <div class="call">
+          <a href="pagina-ong.html" class="btn grid-3">Doar</a>
+          <a href="pagina-ong.html" class="btn grid-3">Saiba Mais</a>
+        </div>
       </div>
     </section>
 
     <footer class="rodape">
       <div class="container">
         <p class="copy grid-6">EstúdioDev &copy; - Alguns direitos reservados.</p>
-
         <div class="infos-facul grid-5">
           <h3>Telefone</h3>
           <p>(47) 3512-3100</p>
-
           <h3>Email</h3>
           <p>qualquercoisa@unisociesc.com.br</p>
         </div>
-
         <p class="sociesc grid-4">UniSociesc</p>
       </div>
     </footer>
