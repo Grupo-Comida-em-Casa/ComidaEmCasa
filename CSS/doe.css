@@ -714,9 +714,39 @@ img {
 }
 
 .ongs-card {
-  margin: 32px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center !important;
+  margin: 32px auto;
   padding: 32px;
   background: #e5e5e5;
+  border-radius: 5px;
+  box-shadow: 6px 6px 10px #a1a1a1;
+}
+
+.ongs-card .cestas-adquiridas {
+  border-top: 1px solid rgba(0, 0, 0, 0.4);
+  padding-top: 15px;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #544848;
+}
+
+.ongs-card .percent {
+  font-family: "Graphik", "Roboto", Helvetica, sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+.percent-bar {
+  content: "";
+  display: inline-block;
+  width: 340px;
+  height: 12px;
+  background: linear-gradient(90deg, #9d9d9d 0%, rgba(159, 159, 159, 0.3) 100%);
+  opacity: 60%;
   border-radius: 5px;
 }
 
@@ -746,6 +776,7 @@ img {
   background: #5271ff;
   color: #f2f2e9;
   border-radius: 5px;
+  box-shadow: 0px 4px 6px #a1a1a1;
 }
 
 .ongs-card .btn:hover {
