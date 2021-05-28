@@ -24,7 +24,6 @@ $logged = isset($_SESSION['nome_usuario']) && !empty($_SESSION['nome_usuario']) 
             <div class="dropdown-content">
               <ul class="navbar-nav text-uppercase ml-auto">
                 <li class="nav-item"><a class="nav-link" href="historia.php">HISTÓRIA</a></li>
-                <li class="nav-item"><a class="nav-link" href="pagina-ong.php">ONGs</a></li>
                 <li class="nav-item"><a class="nav-link" href="Doe.php">DOE</a></li>
                 <li class="nav-item"><a class="nav-link" href="contato.php">CONTATO</a></li>         
               </ul>
@@ -35,7 +34,6 @@ $logged = isset($_SESSION['nome_usuario']) && !empty($_SESSION['nome_usuario']) 
           <div class="collapse navbar-collapse container" id="navbarResponsive">
               <ul class="navbar-nav text-uppercase ml-auto">
                   <li class="nav-item"><a class="nav-link" href="historia.php">HISTÓRIA</a></li>
-                  <li class="nav-item"><a class="nav-link" href="pagina-ong.php">| ONGs</a></li>
                   <li class="nav-item"><a class="nav-link" href="Doe.php">| DOE</a></li>
                   <li class="nav-item"><a class="nav-link" href="contato.php">| CONTATO |</a></li>
               </ul>

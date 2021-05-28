@@ -35,8 +35,6 @@ $_SESSION["ERRO"] = '';
             <?php 
               }else{ ?>
               <button  type="button" onclick="iniciaModal('modal-login')" class="btn bg-primary">Doar</button>
-              <p><h6 class="linha">OU</h6></p>
-              <button type="button" class="btn bg-primary" onclick="iniciaModal('modal-login')">É uma Ong?</button></a>
             <?php } ?>
           </div>
         </div>
@@ -98,7 +96,7 @@ $_SESSION["ERRO"] = '';
           </div><br>
           <div class="saiba_mais">
             <h5>Saiba mais sobre os nossos parceiros</h5><br>
-            <button stype="button" class="btn bg-primary">ONGs</button>   
+            <a href="Doe.php"><button stype="button" class="btn bg-primary">ONGs</button></a> 
           </div>
         </div>
       </div>
