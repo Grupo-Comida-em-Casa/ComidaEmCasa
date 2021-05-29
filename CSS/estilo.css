@@ -125,3 +125,7 @@ h4,
 h5 {
   font-family: Georgia;
 }
+.selecao{
+  width: 20px;
+  height: 20px;
+}

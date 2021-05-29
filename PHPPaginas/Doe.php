@@ -49,7 +49,7 @@
         </div>
         
         <div class="call">
-          <a href="pagina-ong.html" class="btn">Doar</a>
+          <a href="pagina-ong.php" class="btn">Doar</a>
           <a href="pagina-ong.php" class="btn">Saiba Mais</a>
         </div>
       </div>
@@ -74,7 +74,7 @@
         </div>
 
         <div class="call">
-          <a href="pagina-ong.html" class="btn">Doar</a>
+          <a href="pagina-ong.php" class="btn">Doar</a>
           <a href="pagina-ong.php" class="btn">Saiba Mais</a>
         </div>
       </div>
@@ -99,7 +99,7 @@
         </div>
 
         <div class="call">
-          <a href="pagina-ong.html" class="btn">Doar</a>
+          <a href="pagina-ong.php" class="btn">Doar</a>
           <a href="pagina-ong.php" class="btn">Saiba Mais</a>
         </div>
       </div>
@@ -124,7 +124,7 @@
         </div>
 
         <div class="call">
-          <a href="pagina-ong.html" class="btn">Doar</a>
+          <a href="pagina-ong.php" class="btn">Doar</a>
           <a href="pagina-ong.php" class="btn">Saiba Mais</a>
         </div>
       </div>

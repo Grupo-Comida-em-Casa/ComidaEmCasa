@@ -64,7 +64,7 @@ $_SESSION["ERRO"] = '';
       </div><br><br><br>
       <div class="saiba_mais">
         <h5>Conheça mais sobre a gente</h5><br>
-        <button stype="button" class="btn bg-primary">HISTÓRIA</button>   
+        <a href="historia.php"><button stype="button" class="btn bg-primary">HISTÓRIA</button></a>   
       </div>
     
   </div><br><br>
