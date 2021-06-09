@@ -33,3 +33,7 @@ if($instituicao && $email && $endereco && $cnpj && $senha && $cep && $telefone &
 }else{ 
     echo"cep não preenchido";
 }
+
+
+
+// Pagina não esta sendo utilizada.
