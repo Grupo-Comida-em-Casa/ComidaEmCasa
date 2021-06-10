@@ -30,7 +30,7 @@ $logged = isset($_SESSION['nome_usuario']) && !empty($_SESSION['nome_usuario']) 
             </div>    
           </div>
         </nav>
-        <a href="index.php"><img src="../IMG/logotipo.png" style="width: 200px; max-width: 200px !important;" alt=""></a>
+        <a href="index.php"><img src="../IMG/logotipo.png" id="logo" alt=""></a>
           <div class="collapse navbar-collapse container" id="navbarResponsive">
               <ul class="navbar-nav text-uppercase ml-auto">
                   <li class="nav-item"><a class="nav-link" href="historia.php">HISTÓRIA</a></li>
@@ -99,10 +99,6 @@ $logged = isset($_SESSION['nome_usuario']) && !empty($_SESSION['nome_usuario']) 
                     </div>
                 </div>
                 <div class="form-row">
-                    <div class="form-group col-md-6">
-                    <label for="inputCity">CPF</label>
-                    <input type="text" class="form-control cpf" id="inputCity" name="cpf_usuario" placeholder="XXX.XXX.XXX-XX">
-                    </div>
                     <div class="form-group col-md-6">
                     <label for="inputCity">E-mail</label>
                     <input type="email" class="form-control" id="inputCity" name="email_usuario" placeholder="example@gmail.com">
