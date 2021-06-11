@@ -12,20 +12,16 @@ if(isset($_POST['nome'])){
     $confirmarSenha = filter_input(INPUT_POST, "senhaconfirmar");
 }
 
-
-
-
-
 $usuario = new Usuario($pdo);
+$resultado = "";
 
 if($nome && $email && $senha && $telefone && $cpf){
-    echo $nome;exit;
     if($confirmarSenha === $senha ){
         if($usuario->verificaEmailUsuario($email)||$usuario->verificaEmailOng($email)){
-            echo "Esse email ja existe!";
+            $resultado = "email ja existe";
         }else{
             $usuario->cadastrarUsuario($email, $nome, $senha, $telefone, $cpf);
-            echo"deu certo";
+            $resultado = "ok";
         }
     }else{
         //Funcionando
@@ -34,8 +30,5 @@ if($nome && $email && $senha && $telefone && $cpf){
 
     }
 }
+echo $resultado;
 ?>
-<script> 
-
-
-</script>
