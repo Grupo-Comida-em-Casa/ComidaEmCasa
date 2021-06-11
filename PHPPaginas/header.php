@@ -10,7 +10,7 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.min.js"></script>
   </head>
 <?php session_start(); 
-$logged = isset($_SESSION['nome_usuario']) && !empty($_SESSION['nome_usuario']) || isset($_SESSION['instituicao_ong']) && !empty($_SESSION['instituicao_ong']);
+  $logged = isset($_SESSION['nome_usuario']) && !empty($_SESSION['nome_usuario']) || isset($_SESSION['instituicao_ong']) && !empty($_SESSION['instituicao_ong']);
 
 ?>
 <div class="container">
@@ -24,7 +24,7 @@ $logged = isset($_SESSION['nome_usuario']) && !empty($_SESSION['nome_usuario']) 
             <div class="dropdown-content">
               <ul class="navbar-nav text-uppercase ml-auto">
                 <li class="nav-item"><a class="nav-link" href="historia.php">HISTÓRIA</a></li>
-                <li class="nav-item"><a class="nav-link" href="pagina-ong.php">ONGs</a></li>
+                <li class="nav-item"><a class="nav-link" href="Doe.php">ONGs</a></li>
                 <li class="nav-item"><a class="nav-link" href="Doe.php">DOE</a></li>
                 <li class="nav-item"><a class="nav-link" href="contato.php">CONTATO</a></li>         
               </ul>
@@ -35,7 +35,7 @@ $logged = isset($_SESSION['nome_usuario']) && !empty($_SESSION['nome_usuario']) 
           <div class="collapse navbar-collapse container" id="navbarResponsive">
               <ul class="navbar-nav text-uppercase ml-auto">
                   <li class="nav-item"><a class="nav-link" href="historia.php">HISTÓRIA</a></li>
-                  <li class="nav-item"><a class="nav-link" href="pagina-ong.php">| ONGs</a></li>
+                  <li class="nav-item"><a class="nav-link" href="Doe.php">| ONGs</a></li>
                   <li class="nav-item"><a class="nav-link" href="Doe.php">| DOE</a></li>
                   <li class="nav-item"><a class="nav-link" href="contato.php">| CONTATO |</a></li>
               </ul>
@@ -78,7 +78,10 @@ $logged = isset($_SESSION['nome_usuario']) && !empty($_SESSION['nome_usuario']) 
             <div class="form-group col-md-6">
             <label for="inputNovaSenha">Senha</label>
             <input type="password" class="form-control" id="inputEmail4" name="digito2" placeholder="Senha">
+            
+
             </div>
+
             <button class="logar botoes-modal">Logar</button>
             <button id="botaoCadastro" onclick= "iniciaModalRegistro('modal_reg')" class="logar botoes-modal">Cadastre-se</button>
           </div>
@@ -119,9 +122,9 @@ $logged = isset($_SESSION['nome_usuario']) && !empty($_SESSION['nome_usuario']) 
                     <label for="inputPassword4">Confirmar Senha</label>
                     <input type="password" class="form-control" id="inputPassword4" name="confirmaSenha_usuario" placeholder="Confirma Senha">
                     </div>
-                    <?= $_SESSION["ERRO"] ?>
                 </div>
             <button class="logar botoes-modal">Cadastre-se</button>
+            <?php $_SESSION["ERRO"];?>
         </form>
         </div>
       </div>

@@ -1,6 +1,7 @@
 <?php
 require('config.php');
 require('Usuario.php');
+$_SESSION["ERRO"] = '';
 
 $nome = filter_input(INPUT_POST, "nome");
 $email = filter_input(INPUT_POST, "email_usuario", FILTER_VALIDATE_EMAIL);

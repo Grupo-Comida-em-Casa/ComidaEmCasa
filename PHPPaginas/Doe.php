@@ -48,7 +48,7 @@
           <p>Cestas desejadas: <span id="cestas-desejadas">80</span></p>
         </div>
         <div class="call">
-          <a href="pagina-ong.html" class="btn grid-3">Saiba Mais</a>
+          <a href="pagina-ong.php" class="btn grid-3">Saiba Mais</a>
         </div>
       </div>
 
@@ -71,8 +71,7 @@
           <p>Cestas desejadas: <span id="cestas-desejadas">80</span></p>
         </div>
         <div class="call">
-          <a href="pagina-ong.html" class="btn grid-3">Doar</a>
-          <a href="pagina-ong.html" class="btn grid-3">Saiba Mais</a>
+          <a href="pagina-ong.php" class="btn grid-3">Saiba Mais</a>
         </div>
       </div>
 
@@ -95,8 +94,7 @@
           <p>Cestas desejadas: <span id="cestas-desejadas">80</span></p>
         </div>
         <div class="call">
-          <a href="pagina-ong.html" class="btn grid-3">Doar</a>
-          <a href="pagina-ong.html" class="btn grid-3">Saiba Mais</a>
+          <a href="pagina-ong.php" class="btn grid-3">Saiba Mais</a>
         </div>
       </div>
 
@@ -119,8 +117,7 @@
           <p>Cestas desejadas: <span id="cestas-desejadas">80</span></p>
         </div>
         <div class="call">
-          <a href="pagina-ong.html" class="btn grid-3">Doar</a>
-          <a href="pagina-ong.html" class="btn grid-3">Saiba Mais</a>
+          <a href="pagina-ong.php" class="btn grid-3">Saiba Mais</a>
         </div>
       </div>
     </section>

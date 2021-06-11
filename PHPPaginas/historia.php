@@ -12,16 +12,24 @@
 </head>
 <body>
 <!------------------------------------------------------Menu-------------------------------------------------------------> 
-  <?php require "header.php";$_SESSION["ERRO"] = '';
+  <?php require "header.php";
+  $_SESSION["ERRO"] = '';
   ?>
     <div class="intro-bg">
       <div class="container">
         <h1>História</h1>
-
-        <p>XXXXXXXXXXXXXXXXXXXX</p>
       </div>
     </div>
     <section class="ongs container">
+    <div>
+        <p>
+        Nós, alunos da Unisociesc Joinville, fazemos parte de projeto de extensão cujo objetivo é ajudar familias carentes. Visando isso, entramos em consenso para criar um site no qual pessoas possam fazer doações de cestas básicas para familias carentes. Entramos em contato com ONG's parceiras para assim ajudar as pessoas que não possuem condições.
+
+        
+        </p>
+
+      </div>
+
 <!------------------------------------------------------footer-------------------------------------------------------------> 
     </section>
     <?php include "Footer.php";?>

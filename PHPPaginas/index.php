@@ -28,16 +28,7 @@ $_SESSION["ERRO"] = '';
           <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
             <h2 class="sub_titulo">Faça a diferença na vida dessas pessoas com apenas alguns cliques </h2>
             <p><h6 class="linha">__</h6></p>
-            <?php
-              if($logged){
-            ?>
-              <a href="../PHPPaginas/../PHPPaginas/Doe.php"><button  type="button" class="btn bg-primary">Doar</button></a>
-            <?php 
-              }else{ ?>
-              <button  type="button" onclick="iniciaModal('modal-login')" class="btn bg-primary">Doar</button>
-              <p><h6 class="linha">OU</h6></p>
-              <button type="button" class="btn bg-primary" onclick="iniciaModal('modal-login')">É uma Ong?</button></a>
-            <?php } ?>
+            <a href="../PHPPaginas/../PHPPaginas/Doe.php"><button  type="button" class="btn bg-primary">Doar</button></a>
           </div>
         </div>
       </div>
