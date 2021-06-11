@@ -71,14 +71,15 @@ $logged = isset($_SESSION['nome_usuario']) && !empty($_SESSION['nome_usuario']) 
           <div class="form-row">
             <div class="form-group col-md-6">
             <label for="inputCity">E-mail</label>
-            <input type="email" class="form-control" id="inputCity" name="digito1" placeholder="example@gmail.com">
+            <input type="email" class="form-control" id="inputCity" name="digito1" placeholder="example@gmail.com" required>
             </div>
             <div class="form-group col-md-6">
             <label for="inputNovaSenha">Senha</label>
-            <input type="password" class="form-control" id="inputEmail4" name="digito2" placeholder="Senha">
+            <input type="password" class="form-control" id="inputEmail4" name="digito2" placeholder="Senha" required>
             </div>
             <button class="logar botoes-modal">Logar</button>
             <button id="botaoCadastro" onclick= "iniciaModalRegistro('modal_reg')" class="logar botoes-modal">Cadastre-se</button>
+            <?php  $_SESSION["ERRO"] = ''; ?>
           </div>
           </form>
         </div>
@@ -87,43 +88,62 @@ $logged = isset($_SESSION['nome_usuario']) && !empty($_SESSION['nome_usuario']) 
         <div id="modal_registro">
           <button class="fechar">x</button>
           <h2>Cadastro</h2>
-          <form method="POST" action="../PHPConsultas/cadastro-action.php">
+          <form id="cadastroform" method="POST" action="../PHPConsultas/cadastro-action.php">
             <div class="form-row">
                     <div class="col-6">
                     <label for="inputEmail4">Nome</label>
-                    <input type="text" id="inputEmail4" name="nome" placeholder="Nome">
+                    <input  type="text" id="campo_nome" name="nome" placeholder="Nome" required>
                     </div>
                     <div class="col-6">
                     <label for="inputPassword4">Telefone</label>
-                    <input type="text" class="form-control telefone" id="inputCity" name="telefone_usuario" placeholder="(XX) XXXXX-XXXX">
+                    <input type="text" class="form-control telefone" id="campo_telefone" name="telefone_usuario" placeholder="(XX) XXXXX-XXXX" required>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
+                    <label for="inputCity">CPF</label>
+                    <input type="text" class="form-control cpf" id="campo_cpf" name="cpf_usuario" placeholder="XXX.XXX.XXX-XX" required>
+                    </div>
+                    <div class="form-group col-md-6">
+
                     <label for="inputCity">E-mail</label>
-                    <input type="email" class="form-control" id="inputCity" name="email_usuario" placeholder="example@gmail.com">
+                    <input type="email" class="form-control" id="campo_email" name="email_usuario" placeholder="example@gmail.com" required>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
                     <label for="inputNovaSenha">Senha</label>
-                    <input type="password" class="form-control" id="inputEmail4" name="senha_usuario" placeholder="Nova Senha">
+                    <input type="password" class="form-control" id="campo_senha" name="senha_usuario" placeholder="Nova Senha" required>
                     </div>
                     <div class="form-group col-md-6">
                     <label for="inputPassword4">Confirmar Senha</label>
-                    <input type="password" class="form-control" id="inputPassword4" name="confirmaSenha_usuario" placeholder="Confirma Senha">
+                    <input type="password" class="form-control" id="campo_senha_confirmar" name="confirmaSenha_usuario" placeholder="Confirma Senha" required>
                     </div>
                     <?= $_SESSION["ERRO"] ?>
                 </div>
-            <button class="logar botoes-modal">Cadastre-se</button>
+            <button id="botaocadastrar" class="logar botoes-modal">Cadastre-se</button>
         </form>
         </div>
       </div>
-  </div>
+    </div>
+  
   <script src="../JS/script.js"></script>
+  <script src="../JS/cadastro.js"></script>
   <script>
   $(".cpf").mask('000.000.000-00', {reverse: true});
   $(".telefone").mask('00 00000-0000', {reverse: true});
+/*
+    var botaocadastrar = document.querySelector('#botaocadastrar');
+
+    
+    botaocadastrar.addEventListener('click',function(event){
+      event.preventDefault();
+
+    }
+    )
+*/
+
+
   </script>
   <!--fim Login e cadastro-->
 
