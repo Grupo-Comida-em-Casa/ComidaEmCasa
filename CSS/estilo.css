@@ -3,6 +3,11 @@
 body {
   background-color: #fff;
 }
+#logo{
+  width: 200px;
+  max-width: 200px !important;
+  margin-left: 20%;
+}
 #mainNav {
   /*menu*/
   padding-top: 1rem;
