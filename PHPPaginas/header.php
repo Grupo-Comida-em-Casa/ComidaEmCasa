@@ -9,7 +9,10 @@
       <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.min.js"></script>
   </head>
-<?php session_start(); 
+<?php 
+if (session_status() != 2){
+  session_start(); 
+}
 $logged = isset($_SESSION['nome_usuario']) && !empty($_SESSION['nome_usuario']) || isset($_SESSION['instituicao_ong']) && !empty($_SESSION['instituicao_ong']);
 
 ?>
@@ -67,15 +70,15 @@ $logged = isset($_SESSION['nome_usuario']) && !empty($_SESSION['nome_usuario']) 
         <div id="modal">
           <button class="fechar">x</button>
           <h1>Login</h1>
-          <form method="POST" action="../PHPConsultas/login-action.php">
+          <form method="POST" id="login-form" action="../PHPConsultas/login-action.php">
           <div class="form-row">
             <div class="form-group col-md-6">
             <label for="inputCity">E-mail</label>
-            <input type="email" class="form-control" id="inputCity" name="digito1" placeholder="example@gmail.com" required>
+            <input type="email" class="form-control" id="l-email" name="email" placeholder="example@gmail.com" required>
             </div>
             <div class="form-group col-md-6">
             <label for="inputNovaSenha">Senha</label>
-            <input type="password" class="form-control" id="inputEmail4" name="digito2" placeholder="Senha" required>
+            <input type="password" class="form-control" id="l-senha" name="senha" placeholder="Senha" required>
             </div>
             <button class="logar botoes-modal">Logar</button>
             <button id="botaoCadastro" onclick= "iniciaModalRegistro('modal_reg')" class="logar botoes-modal">Cadastre-se</button>
@@ -129,6 +132,7 @@ $logged = isset($_SESSION['nome_usuario']) && !empty($_SESSION['nome_usuario']) 
   
   <script src="../JS/script.js"></script>
   <script src="../JS/cadastro.js"></script>
+  <script src="../JS/login.js"></script>
   <script>
   $(".cpf").mask('000.000.000-00', {reverse: true});
   $(".telefone").mask('00 00000-0000', {reverse: true});

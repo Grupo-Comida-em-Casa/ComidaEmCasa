@@ -1,5 +1,11 @@
 <?php
+require('../PHPConsultas/config.php');
+require('../PHPConsultas/Usuario.php');
 $meta = 1;
+$user = new Usuario($pdo);
+
+$doacoes = $user->listarDoacoes();
+//var_dump($doacoes);
 ?>
 <!DOCTYPE html>
 <html lang="pt_br">
@@ -70,7 +76,7 @@ $_SESSION["ERRO"] = '';
             <table class="table table-striped">
                 <thead>
                     <tr>                               
-                        <th scope="col"><input class="selecao" type="checkbox" id="" name=""></th>
+                        <th scope="col"><input class="selecao selec-pai" type="checkbox" id="" name=""></th>
                         <th scope="col">Nome</th>
                         <th scope="col">Quant Cestas</th>
                         <th scope="col">Telefone</th>
@@ -79,12 +85,20 @@ $_SESSION["ERRO"] = '';
                     </tr>
                  </thead>
                  <tbody>
-                    <tr>
+                 <?php 
+                    $qtdItens = 10;
+                    $qtdItens = count($doacoes) >= 10 ? 10 : count($doacoes);
+
+                    for($x = 0; $x < $qtdItens; $x++){
+                        
+                        if($doacoes[$x]){
+                            echo '
+                        <tr>
                         <th scope="row"><input class="selecao" type="checkbox" id="" name=""></th>
-                        <td>Wagner Martins</td>
-                        <td>10 und</td>
-                        <td>(47) 98564-2536</td>
-                        <td>wagner@martins30@gmail.com</td>
+                        <td>'.$doacoes[$x]['nome_usuario'].'</td>
+                        <td>'.$doacoes[$x]['quant_cestas_total'].' und</td>
+                        <td>'.$doacoes[$x]['telefone_usuario'].'</td>
+                        <td>'.$doacoes[$x]['email_usuario'].'</td>
              <!-------------------------------------------Icones de Excluir e aceitar------------------------------------------->
                         <td><button  type="submit" name="" class="btn btn-success"><i class="fa fa-check" aria-hidden="true"></i></button>
                             <button  type="submit" name=""class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></button>
@@ -92,6 +106,11 @@ $_SESSION["ERRO"] = '';
     
                         </td>
                     </tr>
+                    ';
+                        }
+                        
+                    }
+                 ?>
                 </tbody>
             </table>    
             <button type="submit" class="btn btn-primary mb-2">Enviar</button>
@@ -102,3 +121,21 @@ $_SESSION["ERRO"] = '';
 <?php include "Footer.php";?>
 </body>
 </html>
+
+<script>
+var selecaoPai = document.querySelector(".selec-pai")
+var selecao = document.querySelectorAll(".selecao")
+
+selecaoPai.addEventListener('change', (event) => {
+  if (event.currentTarget.checked) {
+    for(let x = 0;x < selecao.length; x++){
+        selecao[x].checked = true;
+    }
+  } else {
+    for(let x = 0;x < selecao.length; x++){
+        selecao[x].checked = false;
+    }
+  }
+})
+
+</script>

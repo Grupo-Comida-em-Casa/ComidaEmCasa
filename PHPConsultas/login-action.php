@@ -6,19 +6,22 @@ $_SESSION["ERRO"] = '';
 $usuario = new Usuario($pdo);
 $ong = new Usuario($pdo);
 
-$digitoEmail = filter_input(INPUT_POST, "digito1", FILTER_VALIDATE_EMAIL);
-$digitoSenha = filter_input(INPUT_POST, "digito2");
+$digitoEmail = filter_input(INPUT_POST, "email", FILTER_VALIDATE_EMAIL);
+$digitoSenha = filter_input(INPUT_POST, "senha");
 
+$resultado = "";
 
-if($ong->verificaEmailOng($digitoEmail) === true){
-    echo 'entrou ong';
+if($ong->verificaEmailOng($digitoEmail)){
+    
     $ong->fazerLoginOng($digitoEmail, $digitoSenha);
-    }else if($usuario->verificaEmailUsuario($digitoEmail) === true){
-        echo 'entrou usuario';
-        $usuario->fazerLoginUsuario($digitoEmail, $digitoSenha);
+    $resultado = "ok";
+
+}else if($usuario->verificaEmailUsuario($digitoEmail)){
+    $usuario->fazerLoginUsuario($digitoEmail, $digitoSenha);
+    $resultado = "ok";
 }else{
-    $_SESSION["ERRO"] = '<div class="alert alert-warning">Email inexistente</div>';
-        header('Location: ../PHPPaginas/index.php');
+    $resultado = "erro";
 }
 
 
+echo $resultado;

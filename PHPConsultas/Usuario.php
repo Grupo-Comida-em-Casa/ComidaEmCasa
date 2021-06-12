@@ -20,7 +20,7 @@ class Usuario{
         $id = $this->pdo->lastInsertId();
         $this->pegaDados($id);
 
-        header("Location: ../phppaginas/index.php");
+        //header("Location: ../phppaginas/index.php");
     }
 
 // Parte do Usuário 
@@ -56,28 +56,27 @@ class Usuario{
     }
     public function fazerLoginOng($emailOng, $senhaOng){
 
-        $senha = md5($senha);
+        $senha = md5($senhaOng);
 
         $sql = "SELECT * FROM instituicao WHERE email_ong = :email and senha_ong = :senha";
         
 		$sql = 	$this->pdo->prepare($sql);
         $sql->bindValue(':email', $emailOng);
-        $sql->bindValue(':senha', $senhaOng);
+        $sql->bindValue(':senha', $senha);
         $sql->execute();
 
 		if ($sql->rowCount() > 0){ 
            
             //salva os dados do usuario no token
             foreach ($sql->fetchAll() as $ong) { 
+        
 				$_SESSION['id_ong'] = $ong['id_ong'];
                 $_SESSION['instituicao_ong'] = $ong['instituicao_ong'];
                 $_SESSION['email_ong'] = $ong['email_ong'];
-			}
+                $_SESSION['telefone'] = $ong['telefone_ong'];
             
-            header("Location: ../phppaginas/index.php");
-		}else{
-            header("Location: ../phppaginas/index.php");
-			
+			}
+             
 		}
     }
 
@@ -99,12 +98,9 @@ class Usuario{
 				$_SESSION['id_usuario'] = $usuario['id_usuario'];
                 $_SESSION['nome_usuario'] = $usuario['nome_usuario'];
                 $_SESSION['email_usuario'] = $usuario['email_usuario'];
+                $_SESSION['telefone'] = $usuario['telefone_usuario'];
 			}
-            
-            header("Location: ../phppaginas/index.php");
-		}else{
-            header("Location: ../phppaginas/index.php");
-			
+
 		}
     }
 
@@ -125,4 +121,18 @@ class Usuario{
 			return false;
 		}
     }
+
+    public function listarDoacoes(){
+
+        $sql = "SELECT * FROM doacoes, usuario where doacoes.id_usuario = usuario.id_usuario";
+        $sql = $this->pdo->prepare($sql);
+		$sql->execute();
+
+		if($sql->rowCount() > 0) {
+			$dados = $sql->fetchAll();
+           
+		} 
+		return $dados;
+    }
+
 }
