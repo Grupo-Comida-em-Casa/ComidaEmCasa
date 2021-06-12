@@ -58,7 +58,7 @@ $_SESSION["ERRO"] = '';
             </form>
         </div>
         <div class="col">
-            <ol style="list-style: none;">
+            <ol style="list-style: none;"><br><br>
                 <li><h4>Informações UniSociesc</h4></li>
                 <hr>
                 <li><h5>Endereço</h5></li>

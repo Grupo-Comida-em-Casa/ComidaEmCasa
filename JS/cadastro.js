@@ -35,5 +35,22 @@ $('#cadastroform').submit(function(e){
         })
     }
     
+    $.ajax({
+        url: '../PHPConsultas/cadastro_acao.php',
+        method: 'POST',
+        data: {'nome': nome, 'telefone': telefone, 'cpf': cpf, 'email': email, 'senha': senha, 'senhaconfirmar': senhaconfirmar},
+        success: function(data){
+            console.log(data)
+            if(data === "email ja existe"){
+                $('#campo_email').css({'outline': '3px solid red'});
+            }else if(data === "ok"){
+                const modal = document.getElementById("modal_reg");
+                modal.classList.remove("mostrar");
+                window.location.href = "index.php";
+
+            }
+        }
+    })
+
 
 })
