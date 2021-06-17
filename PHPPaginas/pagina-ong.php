@@ -42,8 +42,14 @@ $_SESSION["ERRO"] = '';
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ev
           </p>
+          <form method="POST" action="">
+            <div class="form-group">
+              <label for="formGroupExampleInput"><h3>Qual será o valor da sua doação?</h3></label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input"><br>
+              <button type="button" class="btn btn-primary btn-lg">Doar</button>
+            </div>
+        </form>
         </div>
-
         <div>
           <img src="../IMG/ong-bg.png" alt="Foto da ONG/Funcionarios">
         </div>
