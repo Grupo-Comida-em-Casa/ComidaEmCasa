@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,21 +11,24 @@
   <link rel="stylesheet" href="../CSS/pagina-ong.css">
   <title>História</title>
 </head>
-<body>
-<!------------------------------------------------------Menu-------------------------------------------------------------> 
-  <?php require "header.php";$_SESSION["ERRO"] = '';
-  ?>
-    <div class="intro-bg">
-      <div class="container">
-        <h1>História</h1>
 
-        <p>XXXXXXXXXXXXXXXXXXXX</p>
-      </div>
+<body>
+  <!------------------------------------------------------Menu------------------------------------------------------------->
+  <?php require "header.php";
+  $_SESSION["ERRO"] = '';
+  ?>
+  <div class="intro-bg">
+    <div class="container">
+      <h1>História</h1>
+
+      <p>XXXXXXXXXXXXXXXXXXXX</p>
     </div>
-    <section class="ongs container">
-<!------------------------------------------------------footer-------------------------------------------------------------> 
-    </section>
-    <?php include "Footer.php";?>
- 
+  </div>
+  <section class="ongs container">
+    <!------------------------------------------------------footer------------------------------------------------------------->
+  </section>
+  <?php include "Footer.php"; ?>
+
 </body>
+
 </html>

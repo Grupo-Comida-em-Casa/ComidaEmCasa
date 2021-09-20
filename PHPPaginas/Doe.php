@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,14 +21,20 @@
   ?>
 
   <main>
-    <section class="intro-bg">
-      <div class="container">
-        <h1>Deseja Doar?</h1>
-
-        <p>Mude a vida de uma família</p>
-      </div>
-    </section>
-
+     <header class="capa masthead text-white text-center"><br><br><br><br>
+        <div class="overlay">
+            <h1 class="titulo_principal">Deseja Doar?</h1></p>
+            </h1>
+            <h2 class="sub_titulo">Faça a diferença na vida dessas pessoas <p> com apenas alguns cliques.</p>
+            </h2>
+            <?php if ($logged) { ?>
+                <h2 class="b_doar"><a href="../PHPPaginas/../PHPPaginas/Doe.php"><button type="button" class="btn btn-primary">Doar</button></a></h2>
+            <?php
+            } else { ?>
+                <h2 class="b_doar"><button type="button" onclick="iniciaModal('modal-login')" class="btn btn-primary">Doar</button></h2>
+            <?php } ?>
+        </div><br>
+    </header>
     <section class="ongs">
       <div class="ongs-card grid-16">
         <div class="imagem">
@@ -47,7 +54,7 @@
 
           <p>Cestas desejadas: <span id="cestas-desejadas">80</span></p>
         </div>
-        
+
         <div class="call">
           <a href="pagina-ong.php" class="btn">Doar</a>
           <a href="pagina-ong.php" class="btn">Saiba Mais</a>
@@ -131,7 +138,7 @@
     </section>
   </main>
 
-  <?php include "Footer.php" ?>  
+  <?php include "Footer.php" ?>
 </body>
 
 </html>

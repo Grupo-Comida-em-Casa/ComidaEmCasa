@@ -14,10 +14,10 @@
 </head>
 
 <body>
-<?php  
-include "header.php";
-$_SESSION["ERRO"] = '';
-?>
+  <?php
+  include "header.php";
+  $_SESSION["ERRO"] = '';
+  ?>
 
   <main>
     <section class="intro-bg intro-bg-ong">
@@ -44,11 +44,13 @@ $_SESSION["ERRO"] = '';
           </p>
           <form method="POST" action="">
             <div class="form-group">
-              <label for="formGroupExampleInput"><h3>Qual será o valor da sua doação?</h3></label>
+              <label for="formGroupExampleInput">
+                <h3>Qual será o valor da sua doação?</h3>
+              </label>
               <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input"><br>
               <button type="button" class="btn btn-primary btn-lg">Doar</button>
             </div>
-        </form>
+          </form>
         </div>
         <div>
           <img src="../IMG/ong-bg.png" alt="Foto da ONG/Funcionarios">
@@ -58,7 +60,7 @@ $_SESSION["ERRO"] = '';
 
     <section class="info-localizacao">
       <h2>Onde Nos Encontrar</h2>
-      
+
       <div class="endereco">
         <div>
           <h3>Endereço</h3>
