@@ -17,20 +17,19 @@
 include "header.php";
 $_SESSION["ERRO"] = '';
 ?>
-  <header class="masthead text-white text-center">
-    <div class="overlay">
-      <h1 class="titulo_principal">Contato</h1>
-      <p><h4 class="linha">______</h4>
-    </div></p>
-    <div class="container">
-        <div class="row">
-          <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-            <h2 class="sub_titulo_cotato">Tire suas dúvidas com a gente</h2>
-          </div>
-        </div>
-    </div>
+  <header class="capa masthead text-white text-center"><br><br><br><br> 
+      <div class="overlay">
+        <h1 class="titulo_principal">CONTATO</p></h1>
+         <h2 class="sub_titulo">Faça a diferença na vida dessas pessoas <p> com apenas alguns cliques.</p></h2>
+          <?php if($logged){?>
+            <h2 class="b_doar"><a href="../PHPPaginas/../PHPPaginas/Doe.php"><button type="button" class="btn btn-primary">Doar</button></a></h2>
+          <?php 
+                }else{ ?>
+               <h2 class="b_doar"><button  type="button" onclick="iniciaModal('modal-login')" class="btn btn-primary">Doar</button></h2>
+              <?php } ?>
+      </div><br>
   </header>
-  <div class="container"><br><br><br>
+  <div class="container"><br><br><br><br><br><br>
     <div class="row">
         <div class="col">
         <h4>Formulário de contato</h4>
