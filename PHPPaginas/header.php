@@ -61,7 +61,6 @@
         echo "<button id='botaoRegistro' class='nav-link btn bg-primary text-white ativar_registro'>CADASTRO</button>";
       }
       ?>
-
     </nav>
     <!--Inicio Login e cadastro-->
     <div id="modal-login" class="modal-container">
@@ -79,14 +78,15 @@
               <input type="password" class="form-control" id="l-senha" name="senha" placeholder="Senha" required>
             </div>
             <button class="logar botoes-modal">Logar</button>
-            <button id="botaoCadastro" onclick="iniciaModalRegistro('modal_reg')" class="logar botoes-modal">Cadastre-se</button>
+            <button class="logar botoes-modal" id="botaoCadastro" onclick="iniciaModalRegistro('modal_reg')" ">Cadastre-se</button>
+            <button class=" logar botoes-modal" id="ativar_registro_ongs" onclick="iniciaModalRegistro('modal_reg_ongs')">Cadastro Ongs</button>
             <?php $_SESSION["ERRO"] = ''; ?>
           </div>
         </form>
       </div>
     </div>
-    
-    <div id="modal_reg" class="modal-registro-container">
+
+    <div id="modal_reg" class="modal-registro-container"><br><br>
       <div id="modal_registro">
         <button class="fechar">x</button>
         <h2>Cadastro</h2>
@@ -102,31 +102,72 @@
             </div>
           </div>
           <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="inputCity">CPF</label>
-              <input type="text" class="form-control cpf" id="campo_cpf" name="cpf_usuario" placeholder="XXX.XXX.XXX-XX" required>
-            </div>
-            <div class="form-group col-md-6">
-
+            <div class="form-group col-6">
               <label for="inputCity">E-mail</label>
               <input type="email" class="form-control" id="campo_email" name="email_usuario" placeholder="example@gmail.com" required>
             </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group col-md-6">
+            <div class="form-group col-6">
               <label for="inputNovaSenha">Senha</label>
               <input type="password" class="form-control" id="campo_senha" name="senha_usuario" placeholder="Nova Senha" required>
             </div>
-            <div class="form-group col-md-6">
-              <label for="inputPassword4">Confirmar Senha</label>
-              <input type="password" class="form-control" id="campo_senha_confirmar" name="confirmaSenha_usuario" placeholder="Confirma Senha" required>
-            </div>
             <?= $_SESSION["ERRO"] ?>
           </div>
-          <button id="botaocadastrar" class="logar botoes-modal">Cadastre-se</button>
-        </form>
+          <div class="form-row">
+            <button id="botaocadastrar" class="logar botoes-modal">Cadastre-se</button>
+            <button class="logar botoes-modal" id="ativar_registro_ongs" onclick="iniciaModalRegistro('modal_reg_ongs')">Cadastro Ongs</button>
+          </div>
       </div>
+      </form>
     </div>
+  </div>
+
+  <div id="modal_reg_ongs" class="modal-registro-container"><br>
+    <div id="modal_registro">
+      <button class="fechar">x</button>
+      <h2>Cadastro</h2>
+
+      <form id="cadastroform" method="POST" action="../PHPConsultas/cadastro-action.php">
+        <div class="form-row">
+          <div class="col-6">
+            <label for="inputEmail4">Nome da Ong</label>
+            <input type="text" class="form-control" id="" name="" placeholder="Nome da Ong" required>
+          </div>
+          <div class="col-6">
+            <label for="inputPassword4">Telefone</label>
+            <input type="text" class="form-control" id=" " name=" " placeholder="(XX) XXXXX-XXXX" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-6">
+            <label for="inputCity">E-mail</label>
+            <input type="email" class="form-control" id=" " name=" " placeholder="example@gmail.com" required>
+          </div>
+          <div class="form-group col-6">
+            <label for="inputNovaSenha">Senha</label>
+            <input type="password" class="form-control" id=" " name="" placeholder="Senha" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputCity">Endereço</label>
+          <input type="email" class="form-control" id=" " name=" " placeholder="" required>
+
+          <div class="form-group">
+            <label for="exampleFormControlFile1">Adicione uma imagem</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+          </div>
+
+          <label for="exampleFormControlTextarea1">Qual é a sua história?</label>
+          <textarea class="form-control" id=" " name=" " rows="2"></textarea>
+        </div>
+        <div class="form-row">
+          <button id="botaocadastrar" class="logar botoes-modal">Cadastrar</button>
+        </div>
+    </div>
+
+    </form>
+  </div>
+  </div>
+  <?= $_SESSION["ERRO"] ?>
   </div>
 
   <script src="../JS/script.js"></script>

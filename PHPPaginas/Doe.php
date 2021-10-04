@@ -21,19 +21,20 @@
   ?>
 
   <main>
-     <header class="capa masthead text-white text-center"><br><br><br><br>
-        <div class="overlay">
-            <h1 class="titulo_principal">Deseja Doar?</h1></p>
-            </h1>
-            <h2 class="sub_titulo">Faça a diferença na vida dessas pessoas <p> com apenas alguns cliques.</p>
-            </h2>
-            <?php if ($logged) { ?>
-                <h2 class="b_doar"><a href="../PHPPaginas/../PHPPaginas/Doe.php"><button type="button" class="btn btn-primary">Doar</button></a></h2>
-            <?php
-            } else { ?>
-                <h2 class="b_doar"><button type="button" onclick="iniciaModal('modal-login')" class="btn btn-primary">Doar</button></h2>
-            <?php } ?>
-        </div><br>
+    <header class="capa masthead text-white text-center"><br><br><br><br>
+      <div class="overlay">
+        <h1 class="titulo_principal">Deseja Doar?</h1>
+        </p>
+        </h1>
+        <h2 class="sub_titulo">Faça a diferença na vida dessas pessoas <p> com apenas alguns cliques.</p>
+        </h2>
+        <?php if ($logged) { ?>
+          <h2 class="b_doar"><a href="../PHPPaginas/../PHPPaginas/Doe.php"><button type="button" class="btn btn-primary">Doar</button></a></h2>
+        <?php
+        } else { ?>
+          <h2 class="b_doar"><button type="button" onclick="iniciaModal('modal-login')" class="btn btn-primary">Doar</button></h2>
+        <?php } ?>
+      </div><br>
     </header>
     <section class="ongs">
       <div class="ongs-card grid-16">

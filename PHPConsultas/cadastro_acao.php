@@ -22,16 +22,13 @@ if($nome && $email && $senha && $telefone && $cpf){
         }else{
             $usuario->cadastrarUsuario($email, $nome, $senha, $telefone, $cpf);
             $resultado = "ok";
-
         }   
     }
-
     }else{
         //Funcionando
         $_SESSION["ERRO"] = '<div class="alert alert-warning">Senha não confere!</div>';
         header('Location: ../PHPPaginas/index.php');
-
     }
-}
+
 echo $resultado;
 ?>
